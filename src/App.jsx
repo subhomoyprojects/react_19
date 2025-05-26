@@ -1,31 +1,27 @@
-import { useState, version } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React {version}</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
+    <div className="card-holder">
+      <NetflixSeries />
+      <NetflixSeries />
+      <NetflixSeries />
+    </div>
   );
-}
+};
 
 export default App;
+
+export const NetflixSeries = () => {
+  return (
+    <>
+      <div className="card">
+        <div className="img-wrapper">
+          <img src="img1.jpg" alt="" />
+        </div>
+        <div className="content">
+          <h2>Testing</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur possimus labore soluta odio hic laudantium in neque. Et dolores earum labore blanditiis, ratione soluta illo itaque quos at sint iure?</p>
+        </div>
+      </div>
+    </>
+  );
+};
