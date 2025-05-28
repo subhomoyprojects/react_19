@@ -16,6 +16,11 @@ export const NetflixSeries = () => {
   const rating = () => {
     return 3 + 3;
   };
+  let age = 19;
+  const btnText = () => {
+    if (age >= 18) return "Watch Now";
+    return "Not Available";
+  };
   return (
     <>
       <div className="card">
@@ -28,6 +33,10 @@ export const NetflixSeries = () => {
           <p>
             <strong>{rating()}</strong>
           </p>
+          <button type="button" className="btn">
+            {/* {age >= 18 ? "Watch Now" : "Not Available"} */}
+            {btnText()}
+          </button>
         </div>
       </div>
     </>
