@@ -4,8 +4,6 @@ const App = () => {
   return (
     <div className="card-holder">
       <NetflixSeries />
-      <NetflixSeries />
-      <NetflixSeries />
     </div>
   );
 };
