@@ -5,7 +5,7 @@ const NetflixSeries = () => {
     <>
       {seriesData.map((curItem) => {
         return (
-          <div className="card">
+          <div key={curItem.id} className="card">
             <div className="img-wrapper">
               <img src={curItem.img_url} alt="" />
             </div>
