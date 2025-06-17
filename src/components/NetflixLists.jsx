@@ -8,7 +8,7 @@ export default function NetflixLists({ data: { fullName, img_url, description, r
         <h2>{fullName}</h2>
         <p>{description}</p>
         <p>
-          <strong>{rating}</strong>
+          <strong className={`default-rating ${rating >= 8.5 ? "good" : "average"}`}>{rating}</strong>
         </p>
         <a href={watch_url} target="_blank" className="btn">
           Watch More

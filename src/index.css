@@ -108,3 +108,17 @@ h6 {
   background-color: #535bf2;
   border-color: #535bf2;
 }
+.average {
+  background-color: #cadd1a;
+}
+.good {
+  background-color: #129645;
+}
+.default-rating {
+  padding: 2px 6px;
+  border-radius: 2px;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
