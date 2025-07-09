@@ -1,3 +1,5 @@
+import { Button, LinkButton } from "../styleComponent/styleComponent";
+
 export default function NetflixLists({ data: { fullName, img_url, description, rating, watch_url } }) {
   return (
     <div className="card">
@@ -10,9 +12,9 @@ export default function NetflixLists({ data: { fullName, img_url, description, r
         <p>
           <strong className={`default-rating ${rating >= 8.5 ? "good" : "average"}`}>{rating}</strong>
         </p>
-        <a href={watch_url} target="_blank" className="btn">
+        <LinkButton href={watch_url} target="_blank">
           Watch More
-        </a>
+        </LinkButton>
       </div>
     </div>
   );
