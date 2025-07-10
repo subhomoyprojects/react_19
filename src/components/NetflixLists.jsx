@@ -1,4 +1,4 @@
-import { Button, LinkButton } from "../styleComponent/styleComponent";
+import { LinkButton } from "../styleComponent/styleComponent";
 
 export default function NetflixLists({ data: { fullName, img_url, description, rating, watch_url } }) {
   return (
