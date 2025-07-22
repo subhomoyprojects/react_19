@@ -6,7 +6,7 @@ export default function NetflixLists({ data: { fullName, img_url, description, r
       <div className="img-wrapper">
         <img src={img_url} alt="" />
       </div>
-      <div className="content">
+      <div className="content flex flex-col gap-3">
         <h2>{fullName}</h2>
         <p>{description}</p>
         <p>

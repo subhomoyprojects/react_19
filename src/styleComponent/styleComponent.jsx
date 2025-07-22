@@ -29,6 +29,7 @@ const commonButtonStyles = css`
   text-decoration: none;
   height: auto;
   min-height: 48px;
+  max-width: max-content;
   &:hover,
   &:focus {
     background-color: #646cff;
