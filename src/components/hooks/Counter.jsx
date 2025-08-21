@@ -6,10 +6,10 @@ export default function Counter() {
   return (
     <>
       <h1>Increment Decrement Value {counter} </h1>
-      <button type="button" onClick={() => setCounter((oldCounter) => oldCounter + 1)}>
+      <button className="btn" type="button" onClick={() => setCounter((oldCounter) => oldCounter + 1)}>
         Increment Decrement Button
       </button>
-      <button type="button" onClick={() => setCounter((oldCounter) => (oldCounter > 0 ? oldCounter - 1 : 0))}>
+      <button className="btn" type="button" onClick={() => setCounter((oldCounter) => (oldCounter > 0 ? oldCounter - 1 : 0))}>
         Decrement Button
       </button>
     </>
