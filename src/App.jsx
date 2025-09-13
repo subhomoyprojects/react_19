@@ -1,3 +1,4 @@
+import DerivedState from "./components/DerivedState";
 import Counter from "./components/hooks/Counter";
 import NetflixSeries from "./components/NetflixSeries";
 import PropsUsage from "./components/PropsUsage";
@@ -11,7 +12,8 @@ const App = () => {
       {/* <div className="props-passing-area">
         <PropsUsage />
       </div> */}
-      <Counter />
+      {/* <Counter /> */}
+      <DerivedState />
     </>
   );
 };
